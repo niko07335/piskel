@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Piskel clones</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="index.js"></script>
@@ -18,7 +19,8 @@
       <div class='burger-menu'></div>
       <div class='burger-menu'></div>
     </nav>
-    <h1 class="header__logo">Piskel clones</h1>
+    <h1 class="header__logo">Piskel clone</h1>
+    <p class="header__text"><a href="#" class="header__text--link">Create Sprite</a></p>
     <div class="header__secondary-menu">
       <div></div>
       <div></div>
@@ -26,73 +28,30 @@
     </div>
   </header>
   <main class="main">
-    <div class="instruments">
-      <div class="pen">
-        <p class="pen__count" id='pen-text'>1 size</p>
-        <input id="pen-size" class="pen-size" type="range" min="1" max="5" value='1' step='1'>
-      </div>
-      <div class="main__instriments" id="main__instriments">
-        <div class="instriments__item active-instrument" data-instrument='pen'><i class="fas fa-pen"></i></div>
-        <!-- <div class="instriments__item" data-instrument='fill'><i class="fas fa-fill-drip"></i></div> -->
-        <div class="instriments__item" data-instrument='hand'><i class="far fa-hand-paper"></i></div>
-        <!-- <div class="instriments__item" data-instrument='circle'><i class="far fa-circle"></i></div> -->
-        <div class="instriments__item" data-instrument='square'><i class="far fa-square"></i></div>
-        <div class="instriments__item" data-instrument='eraser'><i class="fas fa-eraser"></i></div>
-        <div class="instriments__item" data-instrument='dropper'><i class="fas fa-eye-dropper"></i></div>
-        <div class="instriments__item" data-instrument='brighter'><i class="fas fa-adjust"></i></div>
-        <div class="instriments__item" data-instrument='mirror'><i class="fas fa-grip-lines-vertical"></i></div>
-        <div class="instriments__item" data-instrument='line'><i class="fas fa-minus"></i></div>
-        <div class="instriments__item" data-instrument='dithering'><i class="fas fa-chess-board"></i></div>
-      </div>
-      <div class="main__color" id="main__color">
-        <li class="colors__item" id='curent_color'>
-          <input class='choise-color' type="color" name="main-color" id="main-color">
-          <input class='choise-color' type="color" name="second-color" id="second-color">
-        </li>
-      </div>
-    </div>
-    <section class="frames" data-frame-action='none'>
-      <div class="frame active-frame" id="frame1" draggable="true">
-        <div class="frame-wrapper" data-frame-action='changeActiveFrame'>
-          <div class="num-frame" data-frame-action='changeActiveFrame'>
-            <p class="num-frame__text">1</p>
-          </div>
-          <div class="del-frame" data-frame-action='delFrame'>
-            <p class="del-frame__text">del</p>
-          </div>
-          <div class="copy-frame" data-frame-action='copyFrame'>
-            <p class="copy-frame__text">copy</p>
-          </div>
+    <div class="main-content">
+      <div class="main-content__wrapper">
+        <div class="main-content__text-wrapper">
+          <h2 class="main-header">Piskel Clone is a free online editor for animated sprites & pixel art</h2>
+          <h4 class="main-subheader">Create animations in your browser.
+            Try an example, do not use Google sign in to access your gallery or simply create a new sprite. </h4>
+          <p class="main-text"><a href="#" class="main-text--link">Create Sprite</a></p>
         </div>
       </div>
-      <div class="add-frame-button" data-frame-action='addFrame'>
-        <p class="add-frame-text" id="add-frame-button">add frame</p>
-      </div>
-    </section>
-    <div class="canvas">
-      <canvas class="canvas-main" id="canvas-main"></canvas>
-      <canvas class='canvas-drawing' id='canvas-drawing'></canvas>
-      <canvas class='canvas-position' id='canvas-position'></canvas>
     </div>
+    <!-- <div class="right-bar"></div> -->
   </main>
-  <div class="secondary-panel">
-    <div class="preview">
-      <div class="preview__img" id='preview__img'>
-      </div>
-      <div class="fps">
-        <p class="fps__count" id='fps-text'>0 fps</p>
-        <input id="fps__preview" class="range-fps" type="range" min="0" max="24" value='0'>
-
-      </div>
-      <div class="size">
-        <p class="size__count" id='size-text'>blocks</p>
-        <input id="size__preview" class="range-size" type="range" min="1" max="5" value='1'>
-      </div>
-      <div class="coordinates">
-        <p class="coordnates-text" id="coordnates-text">X:0 Y:0</p>
-      </div>
+  <section class="example-sprites">
+    <h4 class="example-sprites__title">Example sprites</h4>
+    <p class="example-sprites__text">Here are some examples of user submitted sprites. </p>
+    <div class="sample-wrapper">
+      <div class="sample-box first"></div>
+      <div class="sample-box second"></div>
+      <div class="sample-box third"></div>
     </div>
-  </div>
-<script type="text/javascript" src="app.bundle.js"></script></body>
+  </section>
+  <footer class="footer">
+
+  </footer>
+</body>
 
 </html>
