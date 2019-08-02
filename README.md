@@ -1,4 +1,1 @@
-# niko07335-2019Q1
-| Deadline  | Folder name | Branch name |
-|-----------|-------------|-------------|
-| 30.06.2019 23:59 | piskel-clone | piskel-clone |
+[niko07335.github.io/piskel](https://niko07335.github.io/piskel)
